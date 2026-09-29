@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>História Fácil</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav class="nav">
+      <div class="logo">História<span>Fácil</span></div>
+      <div class="links">
+        <a href="#inicio">Início</a>
+        <a href="#periodos">Períodos</a>
+        <a href="#sobre">Sobre</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-text">
+        <p class="tag">APRENDA • PESQUISE • REVISE</p>
+        <h1>História de um jeito <span>mais fácil.</span></h1>
+        <p>Um espaço educativo para encontrar conteúdos históricos de forma simples, organizada e fácil de entender.</p>
+        <a class="button" href="#periodos">Explorar períodos</a>
+      </div>
+      <div class="hero-card">
+        <div class="card-icon">⌛</div>
+        <h3>Conhecimento através do tempo</h3>
+        <p>Descubra acontecimentos, sociedades e transformações que marcaram a História.</p>
+      </div>
+    </section>
+
+    <section id="periodos" class="section">
+      <div class="section-title">
+        <p class="tag">CONTEÚDOS</p>
+        <h2>Explore a História</h2>
+        <p>Escolha um período para começar sua pesquisa.</p>
+      </div>
+      <div class="grid">
+        <article class="topic">
+          <div class="number">01</div>
+          <h3>Antiguidade</h3>
+          <p>Conheça civilizações como Egito, Grécia e Roma e entenda sua importância histórica.</p>
+          <button onclick="showTopic('Antiguidade','A Antiguidade reúne grandes civilizações, como Egito, Grécia e Roma. Esse período deixou importantes contribuições para a política, cultura, religião e sociedade.')">Ver resumo →</button>
+        </article>
+        <article class="topic">
+          <div class="number">02</div>
+          <h3>Idade Média</h3>
+          <p>Explore o feudalismo, a sociedade medieval, a Igreja e as transformações desse período.</p>
+          <button onclick="showTopic('Idade Média','A Idade Média foi marcada pelo feudalismo, pela forte influência da Igreja e por diferentes transformações sociais, econômicas e políticas na Europa.')">Ver resumo →</button>
+        </article>
+        <article class="topic">
+          <div class="number">03</div>
+          <h3>Idade Moderna</h3>
+          <p>Entenda o Renascimento, as Grandes Navegações, a Reforma e o surgimento de novos Estados.</p>
+          <button onclick="showTopic('Idade Moderna','A Idade Moderna foi marcada por mudanças importantes, como o Renascimento, as Grandes Navegações, a Reforma Protestante e o fortalecimento das monarquias.')">Ver resumo →</button>
+        </article>
+        <article class="topic">
+          <div class="number">04</div>
+          <h3>Idade Contemporânea</h3>
+          <p>Estude acontecimentos que transformaram o mundo nos últimos séculos.</p>
+          <button onclick="showTopic('Idade Contemporânea','A Idade Contemporânea começa com a Revolução Francesa e inclui grandes transformações políticas, sociais, econômicas e tecnológicas.')">Ver resumo →</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div>
+        <p class="tag">SOBRE O PROJETO</p>
+        <h2>História para todos.</h2>
+      </div>
+      <p>O História Fácil foi pensado como uma aplicação web educativa para ajudar estudantes a encontrar e compreender conteúdos de História em um único lugar. A proposta é tornar a pesquisa mais organizada e o aprendizado mais acessível.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>História Fácil • Projeto escolar de aplicação web</p>
+  </footer>
+
+  <div id="modal" class="modal" onclick="closeModal(event)">
+    <div class="modal-content">
+      <button class="close" onclick="closeModal()">×</button>
+      <p class="tag">RESUMO</p>
+      <h2 id="modal-title"></h2>
+      <p id="modal-text"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
